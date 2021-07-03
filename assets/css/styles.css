@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
  
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,12 +10,18 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: #eeeeee;
 }
+/* CSS HEADER START */
 
 .container {
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 
+header {
+    width: 100%;
+    height: 250px;
+}
 .pricecrypto-bar {
     width: 100%;
     height: 2rem;
@@ -37,35 +43,35 @@ body {
     margin-left: 1.5rem;
 }
 
+.logo {
+    padding: 30px 0;
+}
+
 .logo img {
-    width: 300px;
+    width: 200px;
     display: block;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
-
-.menu li {
-    display: inline;
-    position: relative;
-}
-
 .menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto;
     list-style: none;
     text-align: center;
 }
+
 .menu a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-size: 1.2em;
+    position: relative;
 }
 
-.menu li + li {
-    margin-left: 1rem;
-}
-
-.menu li::after{
+.menu a::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -77,7 +83,29 @@ body {
     transform-origin: bottom right;
     background-color: #fcb74b;
 }
-.menu li:hover::after{
+.menu a:hover::after{
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+/* CSS HEADER END */
+
+/* CSS ARTICLES START */
+.column-1 img{
+    width: 100%;
+}
+
+.column-1{
+    width: 50%;
+    display: flex;
+
+}
+
+.column-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.column-2 img {
+    width: 100%;
 }
