@@ -8,4 +8,76 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.pricecrypto-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: #c8c8c8;
+}
+
+.pricecrypto-bar li{
+    display: inline;
+    list-style: none;
+    border: 1px solid black;
+}
+
+.pricecrypto-bar ul {
+    text-align: center;
+    padding-top: 0.4rem;
+}
+
+.pricecrypto-bar li + li {
+    margin-left: 1.5rem;
+}
+
+.logo img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu li {
+    display: inline;
+    position: relative;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.menu li + li {
+    margin-left: 1rem;
+}
+
+.menu li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: bottom right;
+    background-color: #fcb74b;
+}
+.menu li:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
